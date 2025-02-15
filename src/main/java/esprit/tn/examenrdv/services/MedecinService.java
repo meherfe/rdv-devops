@@ -1,6 +1,6 @@
-package esprit.tn.examenrdv.Service;
-import esprit.tn.examenrdv.Entities.*;
-import esprit.tn.examenrdv.Repositories.*;
+package esprit.tn.examenrdv.services;
+import esprit.tn.examenrdv.entities.*;
+import esprit.tn.examenrdv.repositories.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;

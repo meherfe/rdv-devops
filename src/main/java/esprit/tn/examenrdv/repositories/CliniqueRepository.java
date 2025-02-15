@@ -1,7 +1,7 @@
-package esprit.tn.examenrdv.Repositories;
+package esprit.tn.examenrdv.repositories;
 
 
-import esprit.tn.examenrdv.Entities.Clinique;
+import esprit.tn.examenrdv.entities.Clinique;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

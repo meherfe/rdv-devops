@@ -1,4 +1,4 @@
-package esprit.tn.examenrdv.Entities;
+package esprit.tn.examenrdv.entities;
 
 public enum Specialite {
     CARDIOLOGUE,

@@ -1,4 +1,4 @@
-package esprit.tn.examenrdv.Entities;
+package esprit.tn.examenrdv.entities;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

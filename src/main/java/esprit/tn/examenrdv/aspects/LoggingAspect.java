@@ -1,4 +1,4 @@
-package esprit.tn.examenrdv.Aspects;
+package esprit.tn.examenrdv.aspects;
 
 
 
@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 public class LoggingAspect {
 
     // Define a pointcut that matches any method in the service package that starts with 'add'
-    @After("execution(* esprit.tn.examenrdv.Service.*.add*(..))")
+    @After("execution(* esprit.tn.examenrdv.services.*.add*(..))")
     public void logAfterAddMethods() {
         System.out.println("méthode exécutée");
     }

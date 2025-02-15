@@ -1,7 +1,8 @@
-package esprit.tn.examenrdv.Service;
+package esprit.tn.examenrdv.services;
 
-import esprit.tn.examenrdv.Entities.*;
-import esprit.tn.examenrdv.Repositories.*;
+import esprit.tn.examenrdv.entities.*;
+import esprit.tn.examenrdv.repositories.*;
+import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;
@@ -9,9 +10,9 @@ import java.util.Optional;
 
 // Clinique Service
 @Service
+@AllArgsConstructor
 public class CliniqueService {
-    @Autowired
-    private CliniqueRepository cliniqueRepository;
+    private final CliniqueRepository cliniqueRepository;
 
     public Clinique saveClinique(Clinique clinique) {
         return cliniqueRepository.save(clinique);

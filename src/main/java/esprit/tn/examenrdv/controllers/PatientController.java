@@ -1,7 +1,7 @@
-package esprit.tn.examenrdv.RestController;
+package esprit.tn.examenrdv.controllers;
 
-import esprit.tn.examenrdv.Entities.Patient;
-import esprit.tn.examenrdv.Service.PatientService;
+import esprit.tn.examenrdv.entities.Patient;
+import esprit.tn.examenrdv.services.PatientService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

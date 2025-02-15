@@ -1,19 +1,12 @@
-package esprit.tn.examenrdv.RestController;
+package esprit.tn.examenrdv.controllers;
 
-import esprit.tn.examenrdv.Entities.Clinique;
-import esprit.tn.examenrdv.Entities.Medecin;
-import esprit.tn.examenrdv.Entities.Patient;
-import esprit.tn.examenrdv.Entities.RendezVous;
-import esprit.tn.examenrdv.Service.IExamenService;
-import esprit.tn.examenrdv.Service.MedecinService;
-import lombok.AllArgsConstructor;
+import esprit.tn.examenrdv.entities.Medecin;
+import esprit.tn.examenrdv.services.MedecinService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import esprit.tn.examenrdv.Repositories.CliniqueRepository;
+
 import java.util.List;
 import java.util.Optional;
-
-import esprit.tn.examenrdv.Entities.Specialite;
 
 
 @RestController

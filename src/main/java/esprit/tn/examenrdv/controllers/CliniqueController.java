@@ -1,18 +1,20 @@
-package esprit.tn.examenrdv.RestController;
+package esprit.tn.examenrdv.controllers;
 
 
-import esprit.tn.examenrdv.Entities.*;
-import esprit.tn.examenrdv.Service.*;
+import esprit.tn.examenrdv.entities.*;
+import esprit.tn.examenrdv.entities.Clinique;
+import esprit.tn.examenrdv.services.*;
+import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Optional;
 
 @RestController
+@AllArgsConstructor
 @RequestMapping("/clinique")
 public class CliniqueController {
-    @Autowired
-    private CliniqueService cliniqueService;
+    private final  CliniqueService cliniqueService;
 
     @PostMapping("/add")
     public Clinique addClinique(@RequestBody Clinique clinique) {

@@ -1,4 +1,4 @@
-package esprit.tn.examenrdv.Entities;
+package esprit.tn.examenrdv.entities;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -6,8 +6,8 @@ import lombok.Setter;
 import lombok.ToString;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import java.io.Serializable;
-import java.util.Date;
 import java.util.List;
+import java.util.Date;
 
 @Entity
 @Setter
@@ -15,19 +15,24 @@ import java.util.List;
 @NoArgsConstructor
 @ToString
 
-public class Patient implements Serializable{
+public class RendezVous implements Serializable{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long idPatient;
-    private String nomPatient;
-    private int telephone;
+    private long idRDV;
     @Temporal(TemporalType.DATE)
-    private Date dateNaissance;
+    private Date dateRDV;
+    private String remarque;
 
-    @OneToMany(cascade = CascadeType.ALL, mappedBy="patients")
+
+    @ManyToOne
     @JsonIgnore
-    private List<RendezVous> rendezvous;
+    private Medecin medecins;
+
+    @ManyToOne
+    @JsonIgnore
+    private Patient patients;
+
 
 
 }
