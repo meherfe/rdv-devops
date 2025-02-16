@@ -3,7 +3,6 @@ package esprit.tn.examenrdv.services;
 import esprit.tn.examenrdv.entities.*;
 import esprit.tn.examenrdv.repositories.*;
 import lombok.AllArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;

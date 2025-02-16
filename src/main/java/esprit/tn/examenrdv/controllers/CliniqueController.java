@@ -1,11 +1,10 @@
 package esprit.tn.examenrdv.controllers;
 
 
-import esprit.tn.examenrdv.entities.*;
+
 import esprit.tn.examenrdv.entities.Clinique;
 import esprit.tn.examenrdv.services.*;
 import lombok.AllArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Optional;
