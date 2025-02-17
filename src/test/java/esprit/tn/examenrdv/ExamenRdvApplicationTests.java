@@ -8,6 +8,7 @@ class ExamenRdvApplicationTests {
 
 	@Test
 	void contextLoads() {
+		//this is a test feature
 	}
 
 }
