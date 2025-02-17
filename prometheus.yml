@@ -6,9 +6,9 @@ scrape_configs:
     static_configs:
       - targets: ['localhost:9090']
 
-  - job_name: 'postgres'
+  - job_name: 'mysql'
     static_configs:
-      - targets: ['postgres:5432']
+      - targets: ['mysql:3306']
 
   - job_name: 'sonarqube'
     static_configs:
